@@ -1,0 +1,3 @@
+mongodb:
+  connection: mongodb+srv://database:tm8Iw6XegXXYrVja@unimoveisprime-isinq.mongodb.net/test?retryWrites=true&w=majority
+

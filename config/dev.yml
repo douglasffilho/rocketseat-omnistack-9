@@ -1,0 +1,3 @@
+mongodb:
+  connection: mongodb://database:tm8Iw6XegXXYrVja@localhost:27017/database
+

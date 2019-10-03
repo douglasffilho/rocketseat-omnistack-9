@@ -59,3 +59,6 @@ typings/
 
 # next.js build output
 .next
+
+# uploads folder mustn't be versioned
+uploads
