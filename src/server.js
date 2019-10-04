@@ -4,6 +4,7 @@ const express = require('express');
 const router = require('./routes');
 const config = require('config');
 const mongoose = require('mongoose');
+const cron = require('./cron');
 
 const app = express();
 mongoose.connect(
@@ -21,4 +22,7 @@ mongoose.connect(
 app.use(express.json());
 app.use(router);
 
-app.listen(config.app.port, () => { console.log(`listening to port ${config.app.port}`); });
+app.listen(config.app.port, () => {
+    console.log(`listening to port ${config.app.port}`);
+    cron.startSchedullers();
+});
